@@ -31,27 +31,6 @@ public class Land {
         this.area = copyLand.area;
     }
 
-    //setter
-    public void setId()
-    {
-        this.id = id;
-    }
-
-    public void setOwnerName()
-    {
-        this.ownerName = ownerName;
-    }
-
-    public void setHouseType()
-    {
-        this.houseType = houseType;
-    }
-
-    public void setArea()
-    {
-        this.area = area;
-    }
-
     //getter
     public String getId()
     {
