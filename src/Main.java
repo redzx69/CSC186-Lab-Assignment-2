@@ -48,6 +48,17 @@ public class Main {
             String id = in.nextLine();
             System.out.print("Enter owner name: ");
             String ownerName = in.nextLine();
+                // capitalize each of the first letter of the owner name
+                for (int i = 0; i < ownerName.length(); i++)
+                {
+                    if (i == 0) {
+                        ownerName = ownerName.substring(0, 1).toUpperCase() + ownerName.substring(1);
+                    } else if (ownerName.charAt(i) == ' ') {
+                        ownerName = ownerName.substring(0, i + 1) + ownerName.substring(i + 1, i + 2).toUpperCase()
+                                + ownerName.substring(i + 2);
+                    }
+                }
+
             System.out.print("Enter house type [T,S,B,C]: ");
             String houseType = in.nextLine();
                 switch (houseType.charAt(0)) {
