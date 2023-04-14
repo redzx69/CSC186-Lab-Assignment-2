@@ -87,6 +87,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         System.out.printf("%n1.University Program Level%n2.Land details%n%nSelect program[1-2]: ");
         int choice = in.nextInt();
+        in.close();
             if(choice != 1 && choice != 2)
             {
                 System.out.println("Invalid choice.");
